@@ -1,7 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cover {
+            height: 100vh;
+            background: url('cover-image.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cover h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .cover p {
+            font-size: 1.5em;
+        }
+        .nav-link {
+            color: white;
+            font-size: 1.2em;
+        }
+        .feature-section, .about-section {
+            padding: 50px 20px;
+        }
+        .feature {
+            margin-bottom: 30px;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header class="cover text-center">
+    <h1>My Awesome Project</h1>
+    <p>A one-line phrase and/or description of your project</p>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <button class="btn btn-primary mt-4">View Project</button>
+</header>
+
+<section id="features" class="feature-section text-center">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="row">
+            <div class="col-md-4 feature">
+                <img src="feature1.jpg" alt="Feature 1">
+                <h3>Feature 1</h3>
+                <p>Short description of Feature 1.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <img src="feature2.jpg" alt="Feature 2">
+                <h3>Feature 2</h3>
+                <p>Short description of Feature 2.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <img src="feature3.jpg" alt="Feature 3">
+                <h3>Feature 3</h3>
+                <p>Short description of Feature 3.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section text-center bg-light">
+    <div class="container">
+        <h2>About</h2>
+        <p>This project was inspired by my passion for creating impactful digital solutions. The journey began six months ago, and it has been a thrilling experience working on this Portfolio Project for Holberton School. You can view the repository and connect with me below.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/innocent-manda-80b48b187/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Chipatenii" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/pure_hga" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p><a href="https://github.com/yourprojectrepo" target="_blank">View the Project Repository on GitHub</a></p>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
